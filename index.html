@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+    <html>
+      <head>
+        <base href="/">
+        <title>Prueba Técnica</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+        <script src="node_modules/core-js/client/shim.min.js"></script>
+        <script src="node_modules/zone.js/dist/zone.js"></script>
+        <script src="node_modules/reflect-metadata/Reflect.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+    
+       <script src="systemjs.config.js"></script>
+       <script>
+         System.import('app').catch(function(err){ console.error(err); });
+       </script>
+       <link rel="stylesheet" type="text/css" href="app/assets/bootstrap-4.0.0-alpha.5-dist/css/bootstrap.css">
+       <link rel="stylesheet" type="text/css" href="app/assets/css/styles.css">
+       <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet"> 
+       <link rel="stylesheet" type="text/css" href="app/assets/font-awesome-4.7.0/css/font-awesome.min.css">
+      </head>
+      
+      <body>
+        <my-app>Cargando...</my-app>
+      </body>
+    </html>

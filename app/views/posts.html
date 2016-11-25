@@ -1,0 +1,13 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+			<h2>{{titulo}}</h2> <h3 *ngIf="usuario">Por: <a [routerLink]="['/usuarios', usuario.id]"> {{usuario.name}} [{{usuario.username}}]</a></h3>
+		</div>
+	</div>
+	<ul *ngIf="posts" class="ul-general">
+		<li *ngFor="let post of posts" class="li-general">
+			<h3>{{post.id}} &middot; {{post.title}}</h3>
+			<p>{{post.body}}</p>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,300 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  background-color: #eeeeee !important;
+  font-family: "Source Sans Pro", sans-serif;
+  float: left;
+  width: 100%;
+  font-size: 16px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  font-size: 1.5em !important;
+}
+
+a {
+  color: #ea9215;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  text-decoration: none;
+}
+
+chart {
+  margin: 20px 0;
+  float: left;
+  width: 100% !important;
+}
+
+my-app {
+  float: left;
+  width: 100%;
+}
+
+.btn-general {
+  padding: 5px 10px;
+  margin-left: 0 5px;
+  background-color: #ea9215;
+  color: #fff !important;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 0px solid #000000;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  text-decoration: none;
+}
+
+.btn-general:hover {
+  background-color: #3a4750 !important;
+  text-decoration: none !important;
+  color: #fff !important;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+.user-content {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+.user-content h3 {
+  color: #ea9215;
+  margin-bottom: 20px;
+}
+
+.user-buttons {
+  margin-top: 20px;
+}
+
+header {
+  background-color: #303841;
+  float: left;
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
+}
+header h1 {
+  color: #fff;
+  margin-top: 20px !important;
+}
+@media only screen and (max-width: 768px) {
+  header h1 {
+    text-align: center;
+  }
+}
+header nav {
+  margin: 20px 0;
+  padding: 0;
+  float: right;
+  width: 100%;
+  list-style: none;
+  text-align: right;
+}
+@media only screen and (max-width: 768px) {
+  header nav {
+    text-align: center;
+  }
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+  list-style: none;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  padding: 5px 10px;
+  margin-left: 10px;
+  background-color: #ea9215 !important;
+  color: #fff !important;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 0px solid #000000;
+}
+header nav ul li a:hover, header nav ul li a:focus, header nav ul li a:active {
+  background-color: #3a4750 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+usuarios, posts, albumes, album {
+  float: left;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #eeeeee;
+}
+
+posts .ul-general {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+posts .li-general {
+  width: 100%;
+  margin: 15px 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #303841;
+}
+posts .li-general h3 {
+  width: 100%;
+  color: #303841;
+  text-transform: uppercase;
+}
+posts .li-general p {
+  margin-bottom: 0;
+}
+
+albumes .li-general {
+  width: 23%;
+  margin: 1%;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 0px solid #000000;
+  background-color: #3a4750;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+albumes .li-general h3 {
+  color: #fff;
+  width: 100%;
+}
+
+.album {
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 0px solid #000000;
+  background-color: #3a4750;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 15px;
+  margin-top: 15px;
+  float: left;
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+.album a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.album a:hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.album h3 {
+  color: #fff;
+  display: flex;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 0px solid #000000;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  max-width: 100%;
+}
+
+footer {
+  background-color: #3a4750;
+  color: #fff;
+  clear: both;
+  padding: 20px 0;
+}
+
+.user {
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 0px solid #000000;
+  background-color: #3a4750;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 15px;
+  margin-top: 15px;
+  float: left;
+  width: 100%;
+  padding: 10px 10px 15px;
+}
+.user h3 {
+  color: #fff;
+  width: 100%;
+  font-size: 1em !important;
+  margin: 15px auto !important;
+  text-transform: uppercase;
+  height: 35px;
+}
+.user a {
+  color: #ea9215;
+}
+.user a:hover, .user a:focus, .user a:active {
+  color: #ea9215;
+}
+
+.user-data {
+  height: 125px;
+  color: #fff;
+  font-size: 0.8em !important;
+  text-align: left;
+}
+
+.company-map {
+  height: 231px;
+  width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .company-map {
+    margin-bottom: 20px;
+  }
+}
+
+.company-data {
+  height: 85px;
+  color: #fff;
+  font-size: 0.8em !important;
+  text-align: left;
+}
+
+/*# sourceMappingURL=styles.css.map */

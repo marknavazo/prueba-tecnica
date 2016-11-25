@@ -1,0 +1,60 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+			<h2>{{titulo}}</h2>
+		</div>
+	</div>
+	<div class="user-content" *ngIf="usuario">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h3>{{usuario.name}} [{{usuario.username}}]</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<i class="fa fa-map-marker" aria-hidden="true"></i> {{usuario.address.street}}, {{usuario.address.suite}}, {{usuario.address.city}}, {{usuario.address.zipcode}}<br/>
+						<i class="fa fa-phone" aria-hidden="true"></i> {{usuario.phone}}<br/>
+						<i class="fa fa-link" aria-hidden="true"></i> <a href="http://{{usuario.website}}" target="_blank" title="{{usuario.website}}">{{usuario.website}}</a><br/>{{usuario.address.geo.lng}}{{usuario.address.geo.lat}}
+					</div>
+				</div>
+				<hr/>
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h4>{{usuario.company.name}}</h4>
+						{{usuario.company.catchPhrase}}<br/>
+						{{usuario.company.bs}}
+					</div>
+				</div>
+				<div class="row user-buttons">
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<a [routerLink]="['/usuarios']" class="btn-general">volver</a>
+						<a [routerLink]="['/posts', usuario.id]" class="btn-general">posts</a>
+						<a [routerLink]="['/albumes', usuario.id]" class="btn-general">albumes</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" *ngIf!="usuario">
+		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+			<chart [options]="options"></chart>
+		</div>
+		<div *ngFor="let usuario of usuarios" class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+			<div class="user">
+				<h3><a [routerLink]="['/usuarios', usuario.id]">{{usuario.name}}</a></h3>
+				<div class="user-data">
+					{{usuario.username}}<br/>
+					<i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:{{usuario.email}}" title="{{usuario.email}}">{{usuario.email}}</a><br/>
+					
+					<i class="fa fa-phone" aria-hidden="true"></i> {{usuario.phone}}<br/>
+					<i class="fa fa-link" aria-hidden="true"></i> <a href="http://{{usuario.website}}" target="_blank" title="{{usuario.website}}">{{usuario.website}}</a><br/>
+				</div>
+				<a [routerLink]="['/usuarios', usuario.id]" class="btn-general">ficha</a>
+				<a [routerLink]="['/posts', usuario.id]" class="btn-general">posts</a>
+				<a [routerLink]="['/albumes', usuario.id]" class="btn-general">albumes</a>
+			</div>
+		</div>
+	</div>
+</div>
